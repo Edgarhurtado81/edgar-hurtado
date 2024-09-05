@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "montserrat, sans-sarif";
+
+}
+.wrapper{
+
+background-color: #191c32;
+color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand {
+    margin-top: -7px;
+}
+.brand span {
+    color: aqua;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active {
+    color: aqua;
+}
+
+.menu a:hover{
+    background-color: aqua;
+    color: #191c32;
+    transition: ease-in .4s;
+}
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1{
+    font-size: 3em;
+}
+
+span {
+    color: aqua;
+}
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+}
+
+.download-cv:hover{
+    background-color: white;
+    box-shadow: none;
+
+}
+
+.main img{
+    
+    border-radius: 300px;
+    border: 7px solid aqua; 
+}
+body{
+    background-color: #191c32;
+}
+.s2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.s2c1{
+    text-align: center;
+    color: aqua;
+}
+.s1c{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.circulo{
+    border-radius: 50%;
+    border: 5px solid hsl(162, 87%, 46%); 
+    box-shadow: 5px 10px 40px hwb(160 4% 36% / 0.557);
+    display: flex;
+    justify-content: center;
+}
+
+
+.contacto{
+    background-image: url(img/contact_bg.png);
+   
+    color: white;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    color: aqua;
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: aqua;
+    color: white;
+    font-size: 18;
+    
+     
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: chartreuse;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #c21054;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: aqua;
+    color: white;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: chartreuse;
+    display: inline-block;
+    margin-right: 20px;
+}
+.parrafo{
+    
+    color: white;
+}
+.parrafo1{
+    font-size: 20px;
+}
+@media only screen and (max-width: 800px) {
+    .sesiong{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    h1{
+        font-size: 30px;
+    }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .sesiong{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+
+    h1{
+        color: blue;
+        font-size: 20px;
+    }
+
+    .s2{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+  }

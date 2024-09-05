@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="/static/css/estilos.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>E<span>H</span></h2>
+                </div>
+                <ul class="menu">
+                    <li><a class="active"href="{{url_for('inicio')}}">About me</a></li>
+                    <li><a href="{{url_for('portafolio')}}">Portafolio</a></li>
+                    <li><a href="{{url_for('contacto')}}">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+     
+
+     {% block body %}
+
+
+
+     {% endblock %}
+
+
+</body>
+</html>

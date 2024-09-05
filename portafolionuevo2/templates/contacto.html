@@ -1,0 +1,53 @@
+{% extends "plantilla.html" %}
+
+{% block body%}
+     <section class="s1c">
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <form action="enviado" method="POST">
+                            <label for="nombre">nombre</label>
+                            <input type="text" id="nombre" name="nombre">
+                            <label for="number">telefono</label>
+                            <input type="number" name="telefono" id="telefono">
+                           
+                            <label for="email">correo electronico</label>
+                             <input type="text" id="email" name="email">
+                             <label for="Tema">tema</label>
+                             <input type="text" id="tema" name="tema">
+                         
+
+                         <input  style="color: white;" type="submit" value="procesar">
+
+                         
+                         
+                        </form>
+                    </div>
+                    <!-- Mapa -->
+                    <div class="col">
+                        <img src="img/ubicacion.jpg" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    valledupar-cesar, URB MARIA PAULA
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamame al: 3012687407
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    enviame un correo a: edgar_ehurtado@soy.sena.edu.co
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        {% endblock %}
